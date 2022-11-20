@@ -1,0 +1,29 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  text: |
+    salary = 5000  # зарплата
+    spend = 6000  # траты
+    months = 10  # количество месяцев
+    increase = 0.03  # рост цен
+
+    money_capital = 0  # количество денег, чтобы прожить 10 месяцев
+
+    # TODO Оформить решение
+
+    print(round(money_capital))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    18783
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 20 Nov 2022 19:07:59 UTC"
+record: -1
