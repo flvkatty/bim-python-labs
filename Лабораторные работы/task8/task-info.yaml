@@ -1,0 +1,36 @@
+type: output
+files:
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    8
+  learner_created: false
+- name: main.py
+  visible: true
+  text: |
+    money_capital = 20000
+    salary = 5000
+    spend = 6000
+    increase = 0.05
+
+    month = 0  # количество месяцев, которое можно прожить
+
+    while True:
+        delta = spend - salary
+        if delta > money_capital:
+            break
+
+        month += 1
+        money_capital -= delta
+        spend *= 1 + increase
+
+    print(month)  # 8
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 20 Nov 2022 18:59:57 UTC"
+record: -1
