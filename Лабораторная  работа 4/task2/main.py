@@ -2,9 +2,8 @@ def get_count_char(str_):
     frequency = {}
 
     for char in str_.lower():
-        if not char.isalpha():
-            continue
-        frequency[char] = frequency.get(char, 0) + 1
+        if char.isalpha():
+            frequency[char] = frequency.get(char, 0) + 1
 
     return frequency
 
