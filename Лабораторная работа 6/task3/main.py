@@ -9,12 +9,8 @@ def to_csv_file(
         new_line='\n'
 ):
     with open(filename, 'w') as file:
-        def write_row(_row: list):
-            file.write(delimiter.join(_row) + new_line)
-
-        write_row(headers)
-        for row in rows:
-            write_row(row)
+        file.write(delimiter.join(headers) + new_line)
+        file.writelines(map(lambda row: delimiter.join(row) + new_line, rows))
 
 
 headers_list = ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income', 'median_house_value']
