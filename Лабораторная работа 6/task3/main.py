@@ -10,7 +10,7 @@ def to_csv_file(
 ):
     with open(filename, 'w') as file:
         file.write(delimiter.join(headers) + new_line)
-        file.writelines(map(lambda row: delimiter.join(row) + new_line, rows))
+        file.writelines(delimiter.join(row) + new_line for row in rows)
 
 
 headers_list = ['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income', 'median_house_value']
