@@ -68,4 +68,4 @@ class AudioBook(Book):
             self.__duration = duration
 
     def __additional_repr(self) -> str:
-        return f", pages={self.__duration}"
+        return f", duration={self.__duration}"
