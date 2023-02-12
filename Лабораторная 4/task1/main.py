@@ -105,7 +105,7 @@ class Square(Polygon):
         """
         Площадь квадрата.
         Вычисляется намного проще чем для произвольного многоугольника.
-        :returns float: возвращает площадь многоугольника
+        :returns float: возвращает площадь квадрата
         """
         return self.length ** 2
 
@@ -130,7 +130,7 @@ class Line(Polygon):
         super().__init__(points)
 
     def __str__(self) -> str:
-        return "Квадрат c точками: " + str(self._points)
+        return "Линия c точками: " + str(self._points)
 
     def area(self) -> float:
         """
